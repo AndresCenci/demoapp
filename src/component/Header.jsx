@@ -1,5 +1,6 @@
 import logo from '../logo.svg';
 import './Header.css';
+import { Link } from 'react-router-dom';
 
 function Header() {
     return (
@@ -8,9 +9,9 @@ function Header() {
             <h1>Título</h1>
             <nav className='header-nav'>
                 <ul>
-                    <li><a href="http://">Home</a></li>
-                    <li><a href="http://">Contact</a></li>
-                    <li><a href="http://">Products</a></li>
+                    <li><Link to='/'>Home</Link></li>
+                    <li><Link to='/contacts'>Contacts</Link></li>
+                    <li><Link to='/products'>Products</Link></li>
                 </ul>
             </nav>
         </header>
